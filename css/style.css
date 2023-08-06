@@ -1,0 +1,138 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Raleway:wght@200;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: poppins;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color:#000;
+    --bg-color:#e5e5e5;
+    --main-color:#f29294;
+}
+
+body{
+    background-color: var(--bg-color);
+    width: 100%;
+}
+.container{
+    height: 100vh;
+}
+header{
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    flex-wrap: nowrap;
+    height: 100vh;
+    padding-top: 2rem;
+    position: fixed;
+    align-items: center;
+}
+.logo{
+    color:var(--main-color);
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom:5rem ;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    flex-wrap: nowrap;
+}
+
+.icon{
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: rgba(249, 249, 250, 0.15) 0px 0px 10px 10px ;
+    transition: all .50s ease;
+}
+.icon:hover{
+    translate: 5px 5px;
+}
+
+.home{
+    height: 100vh;
+    background-color: var(--bg-color);
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    place-items: center;
+}
+.title{
+    width: 10%;
+    color: var(--main-color);
+    border-bottom: var(--main-color) 2px solid;
+}
+.sub-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.discription{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.text{
+    line-height: 30px;
+}
+
+button{
+    align-items: center;
+    width: 20%;
+    height: 30px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: var(--bg-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(28, 28, 29, 0.6) 0px 10px 10px -10px ;
+    transition: all .50s ease;
+}
+
+button:hover{
+    translate: 0 -7px;
+}
+
+@media screen and (max-width:767px) {
+    .home{
+        background-color: var(--bg-color);
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        place-items: center;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+    }
+    button{
+        width: 50%;
+        margin-bottom:10px ;
+    }
+    .btn{
+        width: 100%;
+        align-items: center;
+    }
+}
